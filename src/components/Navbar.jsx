@@ -5,16 +5,16 @@ const Navbar = ({scrollToSection}) => {
   return (
     <>
       {/* Mobile Navbar */}
-      <nav className="w-full p-5 fixed bottom-0 left-1/2 transform -translate-x-1/2 z-10 sm:px-10 lg:hidden">
+      <nav className="w-full px-5 pb-5 fixed bottom-0 left-1/2 transform -translate-x-1/2 z-10 backdrop-blur-sm sm:px-10 lg:hidden">
         <motion.ul
           className="bg-slate-50 px-10 py-4 flex justify-between items-center rounded-full shadow-md"
           initial={{ y: 100 }}
           animate={{ y: 0 }}
-          transition={{ type: "spring", stiffness: 100 , delay:0.3 }}
+          transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
         >
           {["Home", "About", "Projects", "Contact"].map((item, index) => (
             <motion.li key={index} whileHover={{ scale: 1.25 }}>
-              <a href={`#${item}`}>
+              <button onClick={() => scrollToSection(item)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -51,7 +51,7 @@ const Navbar = ({scrollToSection}) => {
                     </svg>
                   )}
                 </svg>
-              </a>
+              </button>
             </motion.li>
           ))}
         </motion.ul>

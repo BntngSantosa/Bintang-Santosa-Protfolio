@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import { motion } from "framer-motion";
+import ButtonUp from "./components/ButtonUp";
 
 function App() {
     const scrollToSection = (id) => {
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <Navbar scrollToSection={scrollToSection}/>
+      <ButtonUp />
       <main className="">
         <motion.section id="Home" className="bg-gradient-to-b from-sky-100 to-white">
           <Hero />

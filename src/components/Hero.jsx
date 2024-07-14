@@ -5,11 +5,20 @@ import linkedin from "../assets/images/linkedin.png";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const link = {
+    github: "https://github.com/BntngSantosa",
+    ig: "https://www.instagram.com/bntngsnts_?utm_source=ig_web_button_share_sheet&igshid=ZDNlZDc0MzIxNw==",
+    linkedin: "https://www.linkedin.com/in/bintang-santosa-6503272a9/",
+  };
+
+  const images = [
+    { src: github, href: link.github },
+    { src: ig, href: link.ig },
+    { src: linkedin, href: link.linkedin },
+  ];
+
   return (
     <>
-      <div className="w-[550px] h-[450px] rounded-full absolute -top-[320px] -translate-x-1/2 left-1/2 blur-2xl z-0 lg:hidden">
-        <span>.</span>
-      </div>
       <div className="w-full h-[100vh] px-5 flex flex-col gap-5 justify-center items-center">
         <div className="text-center grid grid-cols-1 gap-3">
           <motion.h1
@@ -42,16 +51,19 @@ const Hero = () => {
           </motion.p>
         </div>
         <div className="flex gap-12 md:mt-5">
-          {[github, ig, linkedin].map((item) => (
+          {images.map((item, index) => (
             <motion.a
-              href=""
+              key={index}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ type: "spring", stiffness: 100, delay: 1.5 }}
             >
               <img
                 className="w-14 bg-slate-100 shadow-md place-self-end rounded-lg hover:-rotate-12 hover:scale-125 sm:w-16 md:w-20"
-                src={item}
+                src={item.src}
                 alt=""
                 srcset=""
               />
@@ -59,6 +71,7 @@ const Hero = () => {
           ))}
         </div>
       </div>
+      
     </>
   );
 };

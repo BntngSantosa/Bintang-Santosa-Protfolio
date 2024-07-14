@@ -49,7 +49,7 @@ const Contact = () => {
         </div>
         <hr className=" border border-y-[2px] border-slate-300 my-3 hidden lg:block" />
 
-        <div className="lg:flex lg:justify-between lg:items-center">
+        <div className="mb-20 flex justify-between items-center lg:m-0">
           <div className="flex gap-5 items-center">
             <a href="">
               <svg
@@ -96,7 +96,7 @@ const Contact = () => {
               </svg>
             </a>
           </div>
-          <p className="font-semibold mt-5 mb-16 text-slate-300 lg:m-0 lg:text-lg">
+          <p className="font-semibold text-slate-300 lg:text-lg">
             © 2024, by Bintang Santosa
           </p>
         </div>
