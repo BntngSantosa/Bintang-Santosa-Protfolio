@@ -20,9 +20,8 @@ const About = () => {
             <span className="text-3xl font-semibold text-transparent bg-gradient-to-r from-sky-700 to-sky-500 bg-clip-text lg:text-4xl">
               Hello, I'm Bintang!
             </span>{" "}
-            Passionate in frontend developer and committed to continuously
-            expanding my knowledge and skills in frontend development, deliver
-            clean code and learning new technology.
+            a passionate and detail-oriented frontend developer with a knack for
+            creating visually stunning and highly functional websites.
           </p>
         </div>
         <img src={people} alt="" width={400} className="lg:w-[600px]" />

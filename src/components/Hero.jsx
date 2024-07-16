@@ -44,10 +44,10 @@ const Hero = () => {
             transition={{ type: "spring", stiffness: 100, delay: 1.3 }}
           >
             <span className="text-lg font-bold text-slate-500 sm:text-xl md:text-2xl lg:text-3xl">
-              Frontend Developer
+             As a Frontend Developer
             </span>{" "}
-            with 2+ years of experience in React.js for developing a website and
-            web applications
+            I specialize in creating responsive,
+            engaging, and visually appealing websites.
           </motion.p>
         </div>
         <div className="flex gap-12 md:mt-5">
@@ -71,7 +71,6 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      
     </>
   );
 };

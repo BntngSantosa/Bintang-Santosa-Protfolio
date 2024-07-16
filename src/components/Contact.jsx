@@ -54,7 +54,7 @@ const Contact = () => {
             <a href="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={25}
+                width={18}
                 fill="#cbd5e1"
                 className="lg:w-7"
                 viewBox="0 0 448 512"
@@ -65,7 +65,7 @@ const Contact = () => {
             <a href="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={25}
+                width={18}
                 fill="#cbd5e1"
                 className="lg:w-7"
                 viewBox="0 0 448 512"
@@ -76,7 +76,7 @@ const Contact = () => {
             <a href="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={25}
+                width={18}
                 fill="#cbd5e1"
                 className="lg:w-7"
                 viewBox="0 0 512 512"
@@ -87,7 +87,7 @@ const Contact = () => {
             <a href="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={25}
+                width={18}
                 fill="#cbd5e1"
                 className="lg:w-7"
                 viewBox="0 0 448 512"
@@ -96,7 +96,7 @@ const Contact = () => {
               </svg>
             </a>
           </div>
-          <p className="font-semibold text-slate-300 lg:text-lg">
+          <p className="text-sm font-semibold text-slate-300 lg:text-lg">
             © 2024, by Bintang Santosa
           </p>
         </div>
