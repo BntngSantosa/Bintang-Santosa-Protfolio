@@ -37,7 +37,7 @@ const ButtonUp = () => {
           transition={{ duration: 0.3 }}
         >
           <svg
-            className="w-10"
+            className="w-7"
             fill="#e2e8f0"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
