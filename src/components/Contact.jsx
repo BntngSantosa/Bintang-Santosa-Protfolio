@@ -1,5 +1,4 @@
-import React from "react";
-import Profile from "../assets/images/profile.png";
+import images from "../assets/images";
 
 const Contact = () => {
   return (
@@ -9,7 +8,7 @@ const Contact = () => {
           <span className="text-4xl lg:text-7xl">🎯</span>Let's get connected!
         </h1>
         <div className="flex flex-col gap-4 lg:flex-row">
-          <img src={Profile} alt="" className="w-32 rounded-md lg:w-40" />
+          <img src={images.Profile} alt="" className="w-32 rounded-md lg:w-40" />
           <div className="">
             <h2 className="mb-4 text-lg font-semibold text-slate-300 lg:text-2xl">
               Contact me on:
